@@ -24,22 +24,24 @@
                     <div class="img-inscription1">
                     <h2>L'un des notres ?</h2>
                     <p>Rejoin-nous et continue ton aventure</p>
-                    <a href="#">Connection</a>
+                    <a href="/Connexion">Connection</a>
                 </div>
             </div>
         </div>
 
 
-
+ <myFooter/>
     </div>
 </template>
 <script>
     import Navbar from '@/components/Navbar.vue';
+    import MyFooter from '@/components/MyFooter.vue';
     export default {
 
         name: 'Connexion',
         components: {
-            Navbar
+            Navbar,
+            MyFooter
         }
     }
 </script>

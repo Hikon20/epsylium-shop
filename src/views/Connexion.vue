@@ -13,7 +13,8 @@
                 </form>
                 <a href="" class="forget">Mot de passe oublié ?</a>
                 <p class="nop1">Inscrivez-vous et faites partie de la plus grande famille</p>
-                <a class="nop2" href="#">Inscription</a>
+                
+                <a class="nop2" href="/#/Inscription">Inscription</a>
                 <a href=""><img src="../assets/logo-fb-gris.png" alt="facebook" class="fb1"></a>
                 <a href=""><img src="../assets/logo-tw-gris.png" alt="twitter" class="tw1"></a>
                 <a href=""><img src="../assets/logo-it-gris.png" alt="instagram" class="it1"></a>
@@ -21,22 +22,24 @@
                 <div class="img-inscription">
                     <h2>Nouveau ici ?</h2>
                     <p>Inscrivez-vous et faites partie de la plus grande famille</p>
-                    <a href="#">Inscription</a>
+                    <a href="/Inscription">Inscription</a>
                 </div>
             </div>
         </div>
 
-
-
+    <myFooter/>
     </div>
 </template>
 <script>
     import Navbar from '@/components/Navbar.vue';
+    import MyFooter from '@/components/MyFooter.vue';
+
     export default {
 
         name: 'Connexion',
         components: {
-            Navbar
+            Navbar,
+            MyFooter
         }
     }
 </script>

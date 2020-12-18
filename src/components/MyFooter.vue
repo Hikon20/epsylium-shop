@@ -1,234 +1,167 @@
 <template>
-
-    <div class="wrap">
-        <footer>
-            <div class="footer-top">
-                <div class="container-fluid">
-                    <div class="row col-12 justify-content-start">
-                        <div class="col-lg-4 col-md-6 col-12  segment-one text-md-left text-center ">
-                            <h2>À propos</h2>
-                            <p>Epsylium Shop est une marque déposer et crée par Hikon, elle consiste a crée des
-                                vêtements des accesoires en imprimé loup pour les amoureux de ces derniers,la marque est
-                                Franco-Islandaise et son siège social est situé à Paris.</p>
-                            
-                                <div class="row ">
-                        <div class="col-12 text-md-left text-center">
-
-                                    <a href="https://www.facebook.com/Epsylium-Shop-120695233107343/"
-                                        target="_blank"><img src="../assets/logo-fb.png" alt="logo fb"></a>
-                                    <a href="https://twitter.com/EpsyliumS" target="_blank"><img
-                                            src="../assets/logo-tw.png" alt="logo twitter"></a>
-                                    <a href="https://www.instagram.com/epsylium/" target="_blank">
-                                        <img src="../assets/logo-it.png" alt="logo instagram"></a>
-                                    <a href="https://discord.gg/ARgwmbN" target="_blank"><img
-                                            src="../assets/logo-discord.png" alt="logo discord"></a>
-
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 segment-two text-md-left text-center">
-                            <h2>Menu Footer</h2>
-                            <ul>
-                                <li><a href="#">Collection sauvage</a></li>
-                                <li><a href="#">Histoires des loups</a></li>
-                                <li><a href="#">Tableau des tailles</a></li>
-                                <li><a href="#">Politique de retour / remboursement</a></li>
-                                <li><a href="#">Politique de confidentialité</a></li>
-                            </ul>
-                        </div>
-
-
-                        <div class="col-lg-4 col-md-6 col-12  segment-three text-md-left text-center">
-                            <h2>Newsletter</h2>
-                            <p>Abonnez-vous a la newsletter et ne rater aucune offres !</p>
-                            <form action="">
-                                <input type="email" placeholder="Entrez votre email" aria-required="true">
-                                <input type="submit" value="S'abonner">
-                            </form>
-                        </div>
-                    </div>
+<div>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12 segment-two">
+                    <h2>Menu footer</h2>
+                    
+                      <ul>
+                    <li><a href="#">Collection Sauvage</a></li>
+                    <li><a href="#">Histoire des loups</a></li>
+                    <li><a href="#">Tableau des tailles</a></li>
+                    <li><a href="#">Politique de retour / Remboursement</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                </ul>
                 </div>
-            </div>
-        <div class="pay">
-             <h2 >© Epsylium Shop</h2>
-            <h2>Crée par Hikon</h2>
-            <img src="../assets/paiement.png" alt="">
+              
+          
+             <div class="col-md-4 col-sm-6 col-xs-12 segment-three">
+                 <h2>Suivez-nous</h2>
+                 <p>Suivez-nous sur les réseau sociaux pour ne pas rater des offres spéciales</p>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
         </div>
-        </footer>
+        <div class="col-md-4 col-sm-6 col-xs-12 segment-four">
+            <h2>Newsletter</h2>
+            <p>Abonnez-vous a la newsletter et ne rater aucune offres !</p>
+        <form action="">
+            <input type="email" placeholder="Email" required>
+            <input type="submit" value="Subscribe">
+        </form>
+        
+        </div>
+        
+        </div>
+          </div>
     </div>
+    <p class="footer-bottom-text">All Right Resevered by &copy;Epsylium Shop</p>
+</div>
+  
 </template>
 <script>
+import MyFooter from '@/components/MyFooter.vue'
     export default {
         name: 'MyFooter',
-
+        components:
+        MyFooter
 
     }
 </script>
-<style lang="css">
-    .container-fluid {
-        padding: 0 !important;
-        margin: 0 !important;
-        box-sizing: border-box;
-    }
+<style scoped>
 
-    .row {
-        background: red;
-        padding: 0 !important;
-        margin: 0 !important;
+p {
+    color: #999;
+    line-height: 25px;
 
-
-    }
-
-    h2 {
-        color: #d6be88;
-        font-size: 22px;
-        text-transform: uppercase;
-    }
-
-    .footer-top {
-        background: white;
-
-        width: auto;
-        height: auto;
-    }
-
-    .segment-one {
-        padding: 10px;
-    }
-
-    .segment-one h2 {
-        font-family: Montserrat, sans-serif;
-        font-size: 22px;
-        letter-spacing: 3px;
-
-
-
-    }
-
-    .segment-one p {
-        font-size: 22px;
-        max-width: 100%;
-        color: black;
-
-
-    }
-
-    .segment-one ul {
-        list-style: none;
-        margin: 0;
-        display: table-footer-group;
-    }
-
-    .segment-one li {
-        display: inline-flex;
-
-    }
-
-
-    .segment-one a img {
-        height: 55px;
-        position: relative;
-
-    }
-
-    .segment-two {
-        padding: 10px;
-        background: green;
-    }
-
-    .segment-two h2 {
-        font-family: Montserrat, sans-serif;
-        font-size: 22px;
-        letter-spacing: 3px;
-     
-     
-    }
-
-    .segment-two ul {
-        list-style: none;
-        margin: 0;
-        margin-left: 0px;
-        padding-left: 0px;
-        line-height: 33px;
-      
-    }
-
-    .segment-two ul li a {
-        color: black;
-        text-decoration: none;
-        font-size: 22px;
-    }
-
-    .segment-three {
-        padding: 10px;
-        background: blue;
-    }
-
-    .segment-three h2 {
-        font-family: Montserrat, sans-serif;
-        font-size: 22px;
-        letter-spacing: 3px;
-    }
-
-    .segment-three p {
-        font-size: 18px;
-        color: black;
-    }
-
-    .segment-three form input[type=submit] {
-        background: #d6be88;
-        outline: none;
-        text-transform: uppercase;
-        border: none;
-        padding: 7px 7px;
-        color: white;
-
-    }
-
-    .segment-three form input[type=email] {
-        padding: 7px 7px;
-        width: 200px;
-    }
-
-    .segment-one,
-    .segment-two,
-    .segment-three {
-        margin-bottom: 30px;
-    }
-
-    .footer-bottom-text {
-        text-align: center;
-        background: #111;
-    }
-
-    /* @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .md-mb-30 {
-        margin-bottom: 30px;
-    }
 }
-@media only screen and (max-width: 767px) {
-    .sm-mb-30 {
-        margin-bottom: 30px;
-    }
-    .footer-top {
-        padding: 50px 0;
-    }
-} */
 
-    @media (min-width: 768px) {
-        .segment-two {
-            padding: 10px 0 10px 200px !important;
-        }
-    }
+h2,h3 {
+    color: #fff;
+}
 
-    @media (min-width: 992px) {
-        .segment-two {
-            padding: 10px  !important;
-        }
-    }
+h2 {
+    font-size: 18px;
+}
+
+.footer-top {
+    background: #111;
+    padding: 80px 0;
+}
+
+.segment-one h3 {
+    font-family: Courgette;
+    color: #fff;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+
+.segment-two  h2{
+    color: #fff;
+    font-family: Poppins;
+    text-transform: uppercase;
+}
+
+.segment-two  h2::before  {
+    content:"|";
+    color: #cdb682;
+    padding-right: 10px;
+}
+
+.segment-two ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.segment-two ul li {
+    border-bottom:  1px solid rgba(255, 255, 255, 0.3);
+    line-height: 40px;
+}
+
+.segment-two ul li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.segment-three h2{
+    color: #fff;
+    font-family: Poppins;
+    text-transform: uppercase;
+}
+
+.segment-three h2::before {
+    content: '|';
+    color: #cdb682;
+    padding-right: 10px;
+}
+
+.segment-three a {
+    background: #494848;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.segment-three a i {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 12px;
+}
+
+.segment-four h2 {
+    color: #fff;
+    font-family: Poppins;
+    text-transform: uppercase;
+}
+.segment-four h2::before {
+    content: '|';
+    color: #cdb682;
+    padding-right: 10px;
+}
+
+.segment-four form input[type=submit] {
+    background: #cdb682!important;
+    border: none;
+    padding: 3px 15px;
+    margin-left: -5px;
+    color: #fff;
+    text-transform: uppercase;
+}
 
 
-   
-   
+.segment-four form input[type=email] {
+    margin-left: -5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.footer-bottom-text {
+    text-align: center;
+    background: #000;
+    line-height: 75px;
+}
 </style>

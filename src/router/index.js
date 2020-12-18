@@ -1,18 +1,18 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Connexion from '../components/Connexion.vue'
-import Inscription from '../components/Inscription.vue'
-import Compte from '../components/Compte.vue'
-import Boutique from '../components/Boutique.vue'
+import Accueil from '../views/Accueil.vue'
+import Connexion from '../views/Connexion.vue'
+import Inscription from '../views/Inscription.vue'
+import Compte from '../views/Compte.vue'
+import Boutique from '../views/Boutique.vue'
 
 Vue.use(VueRouter)
 
   const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'Accueil',
+    component: Accueil
   },
   {
     path:'/Connexion',
@@ -40,9 +40,9 @@ Vue.use(VueRouter)
   
  
 ]
-
 const router = new VueRouter({
-  routes
-})
-
+  mode: "history",
+  base: process.env.BASE_URL,
+  routes,
+});
 export default router

@@ -1,20 +1,20 @@
 <template>
 <div class="wrap">
   <nav>
-    <a @click="openSlideMenu()" href="/#"><img class="burger open-slide" src="../assets/open-menu.png" height="50" alt=""></a>
+    <a @click="openSlideMenu()" href="#/#"><img class="burger open-slide" src="../assets/open-menu.png" height="50" alt=""></a>
     <img class="logo1" src="../assets/logo-noir.png"  alt="">
-    <a class="lien1" href="">Accueil</a>
-    <a class="lien2" href="/#/Boutique">Boutique</a>
-    <a class="lien3" href="">Compte</a>
-    <a class="lien4" href="">Histoires des loups</a>
+    <a class="lien1" href="/">Accueil</a>
+    <a class="lien2" href="/Boutique">Boutique</a>
+    <a class="lien3" href="/Connexion">Compte</a>
+    <a class="lien4" href="/Wolf-History">Histoires des loups</a>
    <img class="panier" src="../assets/panier.png" height="50" alt="">
   </nav>
   <div id="side-menu" class="side-nav">
-    <a @click="closeSlideMenu()" href="/#" class="btn-close" ><img src="../assets/croix.png"  alt=""></a>
-    <a href="#">Accueil</a>
-    <a href="#">Boutique</a>
-    <a href="#">Compte</a>
-    <a href="#">Histoires des loups</a>
+    <a @click="closeSlideMenu()" href="#/" class="btn-close" ><img src="../assets/croix.png"  alt=""></a>
+    <a href="/">Accueil</a>
+    <a href="/Boutique">Boutique</a>
+    <a href="/Connexion">Compte</a>
+    <a href="/Wolf-History">Histoires des loups</a>
   </div>
   
 <div id="app">
@@ -53,7 +53,7 @@
   .logo1{
     position: absolute;
     height: 80px;
-    left: 9rem;
+    left: 2rem;
   }
   .panier{
     position: absolute;
@@ -171,6 +171,7 @@
      left: 0;
      z-index: 1;
      background:url('../assets/bg-1.jpg');
+     background-repeat: no-repeat;
      background-size: cover;
     background-position-x: -238PX;
      opacity: 1;
